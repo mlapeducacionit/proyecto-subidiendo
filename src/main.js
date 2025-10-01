@@ -105,7 +105,18 @@ function v3() {
 
 function v4() {
 
-    const botones = document.querySelectorAll('div button')
+    //const botones = document.querySelectorAll('div button')
+    //console.log(botones)
+    const contenedor = document.querySelector('div')
+    console.log(contenedor)
+    // El addEventListener -> Le entregan al callback un objeto que representa el evento.
+    contenedor.addEventListener('click', function(evento) {
+        // console.log(evento) // e, evt, event, evento.
+        // target dentro del objeto evento representa al elemento que disparo el evento.
+        console.log(evento.target)
+    })
+
+    
 
 
 }
