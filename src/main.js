@@ -118,11 +118,13 @@ function v4() {
         if ( evento.target.localName !== 'div' ) {
             console.log('Hicieron click en algún botón')
 
-            evento.target.style.backgroundColor = evento.target.dataset.color
+            evento.target.style.backgroundColor = evento.target.dataset.color || 'gold'
 
             /* console.dir(evento.target) */
 
         } 
+
+        // Propagación de eventos...
 
         /* if ( evento.target.localName === 'div' ) {
             console.log('Hicieron click en el div')
@@ -130,12 +132,7 @@ function v4() {
             console.log('Hicieron click en algún botón')
         } */
 
-
     })
-
-    
-
-
 }
 
 v4()
