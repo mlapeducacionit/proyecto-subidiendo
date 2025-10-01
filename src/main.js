@@ -113,7 +113,24 @@ function v4() {
     contenedor.addEventListener('click', function(evento) {
         // console.log(evento) // e, evt, event, evento.
         // target dentro del objeto evento representa al elemento que disparo el evento.
-        console.log(evento.target)
+        //console.log(evento)
+
+        if ( evento.target.localName !== 'div' ) {
+            console.log('Hicieron click en algún botón')
+
+            evento.target.style.backgroundColor = evento.target.dataset.color
+
+            /* console.dir(evento.target) */
+
+        } 
+
+        /* if ( evento.target.localName === 'div' ) {
+            console.log('Hicieron click en el div')
+        } else {
+            console.log('Hicieron click en algún botón')
+        } */
+
+
     })
 
     
