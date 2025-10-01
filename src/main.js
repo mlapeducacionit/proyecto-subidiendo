@@ -85,6 +85,31 @@ function v2() {
     })
 }
 
-v2()
+// v2()
+
+function v3() {
+    const botones = document.querySelectorAll('div button')
+    
+    console.log(botones)
+
+    const arrayColores = ['crimson', 'rebeccapurple', 'darkblue', 'darkorange']
+
+    botones.forEach((boton, i) => {
+        boton.addEventListener('click', () => {
+            boton.style.backgroundColor = arrayColores[i]
+        })
+    });
+}
+
+//v3()
+
+function v4() {
+
+    const botones = document.querySelectorAll('div button')
+
+
+}
+
+v4()
 
 
