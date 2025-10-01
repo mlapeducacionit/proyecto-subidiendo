@@ -67,30 +67,24 @@ function v1() {
 // v1()
 
 function v2() {
-    const btnUno = document.querySelector('#btn-1')
-    const btnDos = document.querySelector('#btn-2')
-    const btnTres = document.querySelector('#btn-3')
-    const btnCuatro = document.querySelector('#btn-4')
+    const botones = document.querySelectorAll('div button')
+    
+    console.log(botones)
 
-    console.log(btnUno)
-    console.log(btnDos)
-    console.log(btnTres)
-    console.log(btnCuatro)
-
-    btnUno.addEventListener('click', () => {
-        btnUno.style.backgroundColor = 'crimson'
+    botones[0].addEventListener('click', () => {
+        botones[0].style.backgroundColor = 'crimson'
     })
-    btnDos.addEventListener('click', () => {
-        btnDos.style.backgroundColor = 'gray'
+    botones[1].addEventListener('click', () => {
+        botones[1].style.backgroundColor = 'gray'
     })
-    btnTres.addEventListener('click', () => {
-        btnTres.style.backgroundColor = 'lightgreen'
+    botones[2].addEventListener('click', () => {
+        botones[2].style.backgroundColor = 'lightgreen'
     })
-    btnCuatro.addEventListener('click', () => {
-        btnCuatro.style.backgroundColor = '#5f85eb'
+    botones[3].addEventListener('click', () => {
+        botones[3].style.backgroundColor = '#5f85eb'
     })
 }
 
-// v2()
+v2()
 
 
